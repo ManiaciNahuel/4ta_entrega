@@ -1,0 +1,403 @@
+body {
+    background-color: #F3F3F3;
+}
+
+* {
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding-top: 11rem;
+    padding-left: 1%;
+}
+
+
+/* Encabezado */
+
+.logo {
+    display: inline-block;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 180px;
+    background-color: #F3F3F3;
+    z-index: 10;
+    border-bottom: solid 3px #F0572F;
+    border-radius: 3px;
+    grid-area: header;
+}
+
+header h1 {
+    position: absolute;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-bottom: 1px;
+    color: #F0572F;
+}
+
+
+/* Menu items*/
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 2px;
+    border: solid 0.4rem #F6BA1E;
+    background-color: #F6BA1E;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: transform 3s;
+}
+
+.hoverDestinos {
+    border-radius: 6px;
+    background-color: #f0562fce;
+    padding: 3px;
+    display: none;
+    position: absolute;
+    top: 11rem;
+    left: 62%;
+}
+
+.hoverSeguimiento {
+    border-radius: 6px;
+    background-color: #f0562fce;
+    padding: 3px;
+    display: none;
+    position: absolute;
+    top: 11rem;
+    left: 20%;
+}
+
+nav a:hover+div {
+    display: block;
+}
+
+.flexMenu li a:hover {
+    background-color: #F0572F;
+    color: #F3F3F3;
+    border: solid #F0572F 0.4rem;
+    transform: translate(120px, 50%);
+}
+
+.bordo {
+    color: #F0572F;
+}
+
+.letraGrande {
+    font-size: 130%;
+}
+
+
+/* Tabla cotización */
+
+tr td {
+    border: 2px solid #F0572F;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.listStyleSquare {
+    list-style-position: outside;
+    list-style-type: square;
+}
+
+
+/* Lista de localidades */
+
+body section ul li {
+    font-size: large;
+}
+
+.localidades {
+    list-style-type: "\1F4CC";
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Tres opciones */
+
+.serviceContainer a div {
+    border: solid 3px #F0572F;
+    border-radius: 10px;
+    margin: 6px;
+    height: 100%;
+    width: 450px;
+    transition: all 2s;
+}
+
+section div a:hover {
+    color: black;
+}
+
+section div a div:hover {
+    background-color: #F6BA1E;
+    border: solid 3px #F6BA1E;
+}
+
+section div a div img {
+    width: 100%;
+    height: 60%;
+    justify-content: end;
+    padding: 8px;
+}
+
+.page-section {
+    padding: 3rem 0;
+    display: block;
+}
+
+.serviceContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 10px;
+    gap: 50px;
+}
+
+
+/* Carousel */
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #fd7e14;
+    padding: 3px;
+}
+
+.carousel-inner img {
+    width: 900px;
+    height: 600px;
+}
+
+
+/* Otros */
+
+.textArea {
+    background-color: #f0562f2e;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.textAlignLeft {
+    text-align: left;
+}
+
+
+/* ANIMACIONES */
+
+.animacion {
+    transition: background-color 3s;
+}
+
+.animacion:hover {
+    background-color: #F0572F;
+    transform: scale(1.2, 1.2);
+}
+
+
+/* Footer */
+
+footer {
+    margin: 30px 15px 5px 15px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 35px 15px 15px;
+    border: 2px solid salmon;
+    border-radius: 8px;
+    grid-area: pie;
+}
+
+footer div {
+    margin: 5px 3rem 5px 3rem;
+    padding: 15px;
+    display: inline-block;
+}
+
+.inline {
+    display: inline-block;
+}
+
+fieldset {
+    width: 400px;
+}
+
+
+/* Inputs y areas para ingresar información/datos */
+
+input,
+textarea,
+select {
+    background-color: white;
+}
+
+
+/* Grid AYUDA */
+
+#titulo {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-size: xx-large;
+    padding-top: 20px;
+    text-align: center;
+    justify-self: stretch;
+    grid-area: h2;
+}
+
+.form__info {
+    text-align: center;
+    padding: 5px;
+    grid-area: masInfo;
+}
+
+#redes {
+    line-height: 5.5;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid salmon;
+    border-radius: 8px;
+    grid-area: redes;
+}
+
+#newsLetters {
+    padding: 5px;
+    grid-area: mail;
+}
+
+#crecer {
+    padding: 5px;
+    grid-area: crecer;
+}
+
+#submit {
+    padding: 5px;
+    grid-area: sub;
+}
+
+#redes ul {
+    list-style-type: none;
+}
+
+.form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
+    border: 2px solid salmon;
+    border-radius: 8px;
+    grid-area: form;
+}
+
+.containerAyuda {
+    /* align-items: flex-start; */
+    padding: 0px 4px 4px 2px;
+    margin: 2px 4px 4px 2px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 0.4fr 0.5fr repeat(3, 0.75fr) auto;
+    gap: 20px 15px;
+    grid-template-areas: "header header header"/* Fila nro 1 */
+    "h2 h2 h2"/* Fila nro 2 */
+    "redes form form"/* Fila nro 3 */
+    "redes form form"/* Fila nro 4 */
+    "redes form form"/* Fila nro 4 */
+    "redes form form"/* Fila nro 5 */
+    "pie pie pie"/* Fila nro 6 */
+    ;
+}
+
+
+/*  Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 10px;
+    }
+    header {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-color: #F3F3F3;
+        border-bottom: solid 3px #F0572F;
+        border-radius: 3px;
+        grid-area: header;
+    }
+    header h1 {
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 25px;
+        margin-bottom: 1px;
+        color: #F0572F;
+    }
+    nav ul {
+        list-style-type: none;
+        width: 100%;
+        text-align: start;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    nav ul li a {
+        color: #000000;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 2px;
+        border: solid 0.4rem #F6BA1E;
+        background-color: #F6BA1E;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: transform 3s;
+    }
+    nav ul li {
+        padding: 15px;
+    }
+    .containerAyuda {
+        /* align-items: flex-start; */
+        padding: 0px 4px 4px 2px;
+        margin: 2px 4px 4px 2px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-rows: 1fr 0.4fr 0.5fr repeat(3, 0.75fr) auto;
+        gap: 20px 15px;
+        grid-template-areas: "header header header"/* Fila nro 1 */
+        "h2 h2 h2"/* Fila nro 2 */
+        "redes redes redes"/* Fila nro 3 */
+        "redes redes redes"/* Fila nro 4 */
+        "form form form"/* Fila nro 4 */
+        "form form form"/* Fila nro 5 */
+        "pie pie pie"/* Fila nro 6 */
+        ;
+    }
+}
