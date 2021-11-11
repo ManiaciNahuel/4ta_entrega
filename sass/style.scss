@@ -1,7 +1,7 @@
 @import "../bootstrap_sass/scss/bootstrap.scss";
 // Colores //
 $primario: #FF556D;
-$secundario : #1597B0;
+$secundario: #1597B0;
 $fondo: #FEFFFE;
 
 /* General */
@@ -62,6 +62,15 @@ header {
         margin-bottom: 1px;
         color: $primario;
     }
+    /*
+    p {
+        display: inline-block;
+        padding-left: 470px;
+        padding-top: 60px;
+        color: $secundario;
+        size: max($numbers: 50);
+        
+}*/
 }
 
 
