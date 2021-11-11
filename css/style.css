@@ -7856,10 +7856,11 @@ header {
     color: #F0572F; }
   header p {
     display: inline-block;
-    padding-left: 470px;
+    padding-left: 450px;
     padding-top: 60px;
     color: #1597B0;
-    size: 50; }
+    position: absolute;
+    }
 
 /* Menu items*/
 nav ul {
