@@ -7842,7 +7842,7 @@ header {
   position: fixed;
   width: 100%;
   height: 180px;
-  background-color: #FEFFFE;
+  background-color: #F3F3F3;
   z-index: 10;
   border-bottom: solid 3px #FF556D;
   border-radius: 3px;
@@ -7853,7 +7853,6 @@ header {
     margin-top: 50px;
     margin-left: 25px;
     margin-bottom: 1px;
-<<<<<<< HEAD
     color: #FF556D; }
   header p {
     display: inline-block;
@@ -7861,16 +7860,6 @@ header {
     padding-top: 60px;
     color: #1597B0;
     size: 50; }
-=======
-    color: #F0572F; }
-  header p {
-    display: inline-block;
-    padding-left: 450px;
-    padding-top: 60px;
-    color: #1597B0;
-    position: absolute;
-    }
->>>>>>> b81b438e9c1e81a38d112c8a812a02b50df990bf
 
 /* Menu items*/
 nav ul {
@@ -7915,7 +7904,7 @@ nav a:hover + div {
 
 .flexMenu li a:hover {
   background-color: #FF556D;
-  color: #FEFFFE;
+  color: #F3F3F3;
   border: solid #FF556D 0.4rem;
   transform: translate(120px, 50%); }
 
@@ -8155,7 +8144,7 @@ select {
     position: relative;
     width: 100%;
     height: 360px;
-    background-color: #FEFFFE;
+    background-color: #F3F3F3;
     border-bottom: solid 3px #FF556D;
     border-radius: 3px;
     grid-area: header; }
@@ -8164,13 +8153,7 @@ select {
       margin-top: 50px;
       margin-left: 25px;
       margin-bottom: 1px;
-<<<<<<< HEAD
       color: #FF556D; }
-=======
-      color: #F0572F; }
-    header p {
-    display: none; }
->>>>>>> b81b438e9c1e81a38d112c8a812a02b50df990bf
   nav ul {
     list-style-type: none;
     width: 100%;
