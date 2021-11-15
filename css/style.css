@@ -7813,7 +7813,7 @@ textarea.form-control-lg {
 
 /* General */
 body {
-  background-color: #FEFFFE; }
+  background-color: #FFFFFD; }
   body section ul li {
     font-size: large; }
 
@@ -7825,7 +7825,7 @@ body {
 
 main {
   padding-top: 11rem;
-  padding-left: 1%; }
+  padding-left: 2px; }
 
 a {
   color: #F0572F;
@@ -7836,29 +7836,31 @@ a:hover {
 
 /* Encabezado */
 .logo {
-  display: inline-block; }
+  display: inline-block;
+  padding: 15px 0px 5px 0px; }
 
 header {
   position: fixed;
   width: 100%;
-  height: 180px;
-  background-color: #F3F3F3;
+  height: 190px;
+  background-color: #FFFFFD;
   z-index: 10;
-  border-bottom: solid 3px #FF556D;
+  border-bottom: solid 3px #FD7F52;
   border-radius: 3px;
   grid-area: header; }
   header h1, header .h1 {
+    font-size: 40px;
     position: absolute;
     display: inline-block;
     margin-top: 50px;
-    margin-left: 25px;
     margin-bottom: 1px;
-    color: #FF556D; }
+    color: #FD7F52; }
   header p {
+    position: absolute;
     display: inline-block;
-    padding-left: 470px;
-    padding-top: 60px;
-    color: #1597B0;
+    padding-top: 90px;
+    padding-left: 30px;
+    color: #53B3FF;
     size: 50; }
 
 /* Menu items*/
@@ -7869,14 +7871,15 @@ nav ul {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  padding-left: 1rem; }
   nav ul li a {
     color: #000000;
     text-decoration: none;
     border-radius: 10px;
     padding: 2px;
-    border: solid 0.4rem #1597B0;
-    background-color: #1597B0;
+    border: solid 0.4rem #FFBD41;
+    background-color: #FFBD41;
     margin-left: 5px;
     margin-right: 5px;
     transition: transform 3s; }
@@ -7903,13 +7906,13 @@ nav a:hover + div {
   left: 20%; }
 
 .flexMenu li a:hover {
-  background-color: #FF556D;
+  background-color: #FD7F52;
   color: #F3F3F3;
-  border: solid #FF556D 0.4rem;
+  border: solid #FD7F52 0.4rem;
   transform: translate(120px, 50%); }
 
 .naranja {
-  color: #FF556D; }
+  color: #FD7F52; }
 
 .letraGrande {
   font-size: 130%; }
@@ -7919,7 +7922,7 @@ table {
   width: 97vw; }
 
 tr td {
-  border: 2px solid #FF556D;
+  border: 2px solid #FD7F52;
   padding: 20px; }
 
 .italic {
@@ -7940,6 +7943,16 @@ tr td {
   list-style-position: inside; }
 
 /* Tres opciones */
+/* Arreglo del boostrap - generaba un scroll */
+.row {
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x)); }
+
 .serviceContainer {
   display: flex;
   flex-direction: row;
@@ -7949,7 +7962,7 @@ tr td {
   margin-bottom: 10px;
   gap: 50px; }
   .serviceContainer a div {
-    border: solid 3px #FF556D;
+    border: solid 3px #FD7F52;
     border-radius: 10px;
     margin: 6px;
     height: 100%;
@@ -7960,8 +7973,8 @@ section div a:hover {
   color: black; }
 
 section div a div:hover {
-  background-color: #1597B0;
-  border: solid 3px #1597B0; }
+  background-color: #FFBD41;
+  border: solid 3px #FFBD41; }
 
 section div a div img {
   width: 100%;
@@ -7981,8 +7994,8 @@ section div a div img {
   padding: 3px; }
 
 .carousel-inner img {
-  width: 900px;
-  height: 600px; }
+  width: 100%;
+  height: 450px; }
 
 /* Otros */
 .textArea {
@@ -7998,7 +8011,7 @@ section div a div img {
 .animacion {
   transition: background-color 3s; }
   .animacion:hover {
-    background-color: #FF556D;
+    background-color: #FD7F52;
     transform: scale(1.2, 1.2); }
 
 /* Footer */
@@ -8009,11 +8022,11 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 15px 35px 15px 15px;
-  border: 2px solid #FF556D;
+  border: 2px solid #FD7F52;
   border-radius: 8px;
   grid-area: pie; }
   footer div {
-    margin: 5px 3rem 5px 3rem;
+    margin: 5px 1rem 5px 1rem;
     padding: 15px;
     display: inline-block; }
 
@@ -8083,7 +8096,7 @@ select {
   line-height: 5.5;
   padding: 35px 5px;
   text-align: center;
-  border: 2px solid #FF556D;
+  border: 2px solid #FD7F52;
   border-radius: 8px;
   grid-area: redes; }
   .redes ul {
@@ -8110,7 +8123,7 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 2px solid #FF556D;
+  border: 2px solid #FD7F52;
   border-radius: 8px;
   grid-area: form; }
 
@@ -8134,27 +8147,41 @@ select {
   color: #1ca81c; }
 
 /*  Small devices (landscape phones, 576px and up) */
-@media (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 870px) {
+  header p {
+    position: absolute;
+    display: inline-block;
+    padding-top: 90px;
+    padding-left: 30px; }
+  .empresas {
+    max-width: 100%; } }
+
+@media (max-width: 600px) {
   main {
     padding-top: 10px; }
   #titulo {
     margin: 0px;
     padding: 0px; }
   header {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 360px;
-    background-color: #F3F3F3;
-    border-bottom: solid 3px #FF556D;
+    height: 380px;
     border-radius: 3px;
     grid-area: header; }
     header h1, header .h1 {
+      font-size: 34px;
       display: inline-block;
       margin-top: 50px;
-      margin-left: 25px;
       margin-bottom: 1px;
-      color: #FF556D; }
+      color: #FD7F52; }
+    header p {
+      position: absolute;
+      display: inline-block;
+      padding-top: 90px;
+      padding-left: 30px;
+      flex-wrap: wrap; }
   nav ul {
+    position: absolute;
     list-style-type: none;
     width: 100%;
     text-align: center;
@@ -8170,13 +8197,26 @@ select {
         border-radius: 10px;
         padding: 0px 86px;
         width: 100%;
-        border: solid 0.4rem #1597B0;
-        background-color: #1597B0;
+        border: solid 0.4rem #FFBD41;
+        background-color: #FFBD41;
         margin-left: 5px;
         margin-right: 5px;
         transition: transform 3s; }
   nav a:hover + div {
     display: none; }
+  .page-section {
+    padding-top: 28rem;
+    display: block; }
+  .serviceContainer a div {
+    /* border: solid 3px $primario;
+                border-radius: 10px; */
+    margin: 6px;
+    height: 100%;
+    width: 90%;
+    justify-content: center;
+    text-align: center; }
+  .empresas img {
+    max-width: 100%; }
   .containerAyuda {
     padding: 0px 4px 4px 2px;
     margin: 2px 4px 4px 2px;
