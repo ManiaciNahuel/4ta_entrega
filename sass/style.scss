@@ -58,6 +58,7 @@ header {
     h1 {
         font-size: 40px;
         position: absolute;
+        width: 100%;
         display: inline-block;
         margin-top: 50px;
         margin-bottom: 1px;
@@ -67,9 +68,7 @@ header {
         position: absolute;
         display: inline-block;
         padding-top: 90px;
-        padding-left: 30px;
         color: #53B3FF;
-        size: max($numbers: 50);
     }
 }
 
@@ -200,16 +199,6 @@ tr {
 }
 
 .serviceContainer {
-    a {
-        div {
-            border: solid 3px $primario;
-            border-radius: 10px;
-            margin: 6px;
-            height: 100%;
-            width: 450px;
-            transition: all 2s;
-        }
-    }
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -217,6 +206,16 @@ tr {
     width: 100%;
     margin-bottom: 10px;
     gap: 50px;
+    a {
+        div {
+            border: solid 3px $primario;
+            border-radius: 10px;
+            margin: 6px;
+            height: 100%;
+            width: 350px;
+            transition: all 2s;
+        }
+    }
 }
 
 section {
@@ -260,7 +259,9 @@ section {
 .carousel-inner {
     img {
         width: 100%;
-        height: 450px;
+        height: 70%;
+        max-width: 860px;
+        max-height: 500px;
     }
 }
 
@@ -450,14 +451,15 @@ $color in $redes {
 /*  Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 601px) and (max-width: 870px) {
-    header p {
-        position: absolute;
-        display: inline-block;
-        padding-top: 90px;
-        padding-left: 30px;
+    .logo {
+        padding-top: 10px;
     }
     .empresas {
         max-width: 100%;
+    }
+    #titulo {
+        margin: 0px;
+        padding: 0px;
     }
 }
 
@@ -477,6 +479,7 @@ $color in $redes {
         grid-area: header;
         h1 {
             font-size: 34px;
+            width: 58%;
             display: inline-block;
             margin-top: 50px;
             margin-bottom: 1px;
@@ -484,10 +487,8 @@ $color in $redes {
         }
         p {
             position: absolute;
+            margin-top: 40px;
             display: inline-block;
-            padding-top: 90px;
-            padding-left: 30px;
-            flex-wrap: wrap;
         }
     }
     nav {
@@ -505,7 +506,7 @@ $color in $redes {
                     color: #000000;
                     text-decoration: none;
                     border-radius: 10px;
-                    padding: 0px 86px;
+                    padding: 0px 55px;
                     width: 100%;
                     border: solid 0.4rem $secundario;
                     background-color: $secundario;
